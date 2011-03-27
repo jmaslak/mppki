@@ -1,0 +1,58 @@
+1) How do we verify a certificate?
+     ---> Must check ALL CRLs!
+     ---> Support multiple CDPs
+     ---> O, OU must 
+
+2) How to build a trust path
+     ---> All certificates in path must be present
+     ---> Must lead to a trusted root
+     ---> Extension at each level (nameConstraints)
+            Limit signatures to certain C/O/OU
+	    Limit signatures to certain namespace
+     ---> Trusted party (not just root cert)
+	    Includes policy!
+
+3) How do we distribute certs?
+     ---> Web URL
+     ---> Supports referrals
+     ---> Certs must validate once fetched
+
+4) Offline mode: Decryption is easy.
+     ---> Encryption possible if certs cached (with warning)
+     ---> Signature verification possible if certs cached
+          (with warning if CRLs not fetched)
+
+5) Workgroup Mode
+     ---> Allow sharing of CRLs, certs on local IPv6 network
+     ---> Allow sharing of CRLs, certs via email
+     ---> Allow sharing of CRLs, certs via disk files
+
+6) Escrow
+     ---> TPI+
+     ---> Docs should be encrypted with escrow key(s) too
+	    (Follow rules: [m OF n] must be able to decrypt)
+     ---> Escrow based on rules in user certificate
+     ---> User private keys should be escrowed
+     ---> Signing key NOT escrowed and seperate from encryption key!
+
+7) Superceeded Key
+     ---> Old docs should still be able to be read
+     ---> Even if old keys are lost, old docs should be able to be read
+     ---> Security warning if opening doc that is associated with compromised
+            key!
+     ---> Signatures should still validate, but with warning
+
+8) Automatic re-enrollment
+     ---> Use old key
+     ---> Escrow!
+
+9) Initial issuance
+     ---> RA model
+     ---> Allow TPI
+     ---> Online enrollment
+
+10) Must support subordinate CAs
+
+11) Security of keys
+     ---> Password options
+
