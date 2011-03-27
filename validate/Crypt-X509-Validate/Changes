@@ -1,0 +1,6 @@
+Revision history for Perl extension Crypt::X509::Validate.
+
+0.01  Sun Mar 27 14:31:11 2011
+	- original version; created by h2xs 1.23 with options
+		-b 0.0.1 -AX Crypt::X509::Validate
+
