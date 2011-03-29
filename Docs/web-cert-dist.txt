@@ -1,0 +1,67 @@
+Cert contents (Valid Cert):
+
+  ID: jmaslak@antelope.net
+    VALIDATIONPATH: http://pki.antelope.net/cert/root-jmaslak-antelope.net-valid
+  ID: jmaslak@localmatters.net
+    VALIDATIONURL: http://pki.localmatters.com/cert/root-jmaslak-antelope.net-valid
+  ID: foo@gmail.com
+    NOT VERIFIED
+
+ENCRYPT KEY:
+<KEY>
+
+ESCROW KEY(S):
+<KEY>
+
+SIGN KEY:
+<KEY> <VALID FROM> <VALID TO> <REVOKATION REASON>
+<KEY> <VALID FROM> <VALID TO> <REVOKATION REASON>
+<KEY>
+
+<NEXT KEY SIGNED BY PREVIOUS KEY FOR NORMAL RE_KEY; IF LOST,
+CHAIN IS BROKEN AND INDICATED WITH MISSING KEY>
+
+<WHOLE MESSAGE SHA1 AND MD5 SIGNED BY KEY>
+
+
+---- VERIFICATION URL (END USER):
+
+ID: jmaslak@antelope.net
+
+<VALID SIGNATURE KEY (MOST RECENT SIGNED)>
+
+VERIFIED: http://pki.localmatters.com/cert/root <0239df321>
+
+POLICY: <oid>
+
+<WHOLE MESSAGE SIGNED BY MD5 & SHA1 SIGNED BY SIGNER KEY>
+
+
+---- SIGNING CERT:
+
+PATTERN: ...@antelope.net
+    VERIFICATION: <URL> <POLICY MAP>
+    VERIFICATION: <URL> <POLICY MAP>
+    VERIFICATION: <URL> <POLICY MAP>
+    NOT VERIFIED
+
+SIGN KEY:
+<KEY> <VALID FROM> <VALID TO> <REVOKATION REASON>
+<KEY> <VALID FROM> <VALID TO> <REVOKATION REASON>
+<KEY>
+
+<SIGNATURE BLOCK SIGNED BY EACH OF ABOVE VALID KEYS>
+
+<NEXT KEY SIGNED BY PREVIOUS KEY FOR NORMAL RE_KEY>
+
+
+---- PRIVATE VERIFICATION:
+URL: <private location>/@antelope.net
+  or
+URL: <private location>/jmaslak@antelope.net
+
+PATERN: ...@antelope.net
+URL: ...
+
+   VERIFICATION: <URL> <POLICY MAP>
+
